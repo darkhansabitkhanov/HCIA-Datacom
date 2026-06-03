@@ -266,12 +266,12 @@ Import APs to the AC
 ```shell
 wlan
  ap auth-mode mac-auth
- ap-id 0 ap-mac 00E0-FC84-1B70
+ ap-id 0 ap-mac 00E0-FC17-3630
  ap-name AP1
  ap-group ap-group1
  quit
 
- ap-id 1 ap-mac 00E0-FCDA-5BF0
+ ap-id 1 ap-mac 00E0-FC56-68e0
  ap-name AP2
  ap-group ap-group1
  quit

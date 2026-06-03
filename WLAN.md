@@ -149,7 +149,11 @@ display vlan brief
 
 Configure Trunk Port and Allowed VLANs
 ```shell
-interface g0/0/10
+interface g0/0/1
+ port link-type trunk
+ port trunk allow-pass vlan 43 100 200
+
+interface g0/0/2
  port link-type trunk
  port trunk allow-pass vlan 43 100 200
 
@@ -243,11 +247,8 @@ vap-profile name VAP-Guest
  security-profile WLAN-Guest
 quit
 ```
-> Forwarding Mode — трафикті бағыттау режимі  
 
 **6-қадам: AP Group**
-
-> AP Group-ға барлық Profile-дерді байланыстыру   
 
 ```shell
 ap-group name ap-group1
@@ -272,10 +273,6 @@ wlan
  ap-group ap-group1
  quit
 ```
-> Access Point Model: **AirEngine 6761-21**  
-> Access Point Type: **AP2050DN**  
-> AP1 MAC Address: 90F9-B722-2000  
-> AP2 MAC Address: 90F9-B722-17C0  
 
 ```shell
 display ap all

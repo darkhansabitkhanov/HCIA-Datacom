@@ -251,17 +251,6 @@ vap-profile name VAP-Guest
 quit
 ```
 
-**6-қадам: AP Group**
-
-```shell
-ap-group name ap-group1
- regulatory-domain-profile default
-
- vap-profile VAP-Staff wlan 1 radio all
- vap-profile VAP-Guest wlan 2 radio all
-quit
-```
-
 Import APs to the AC
 ```shell
 wlan
@@ -275,6 +264,17 @@ wlan
  ap-name AP2
  ap-group ap-group1
  quit
+```
+
+**6-қадам: AP Group**
+
+```shell
+ap-group name ap-group1
+ regulatory-domain-profile default
+
+ vap-profile VAP-Staff wlan 1 radio all
+ vap-profile VAP-Guest wlan 2 radio all
+quit
 ```
 
 ```shell
@@ -293,56 +293,3 @@ State: "Fault немесе idle" болса, AP-мен байланыс жоқ �
 STA1> ipconfig
 STA2> ipconfig
 ```
-
-```shell
-<AC1> display station all
-```
-
-```shell
-Checking Profiles
-<AC1> display wlan vap-profile all
-<AC1> display wlan ssid-profile all
-<AC1> display wlan security-profile all
-```
-
-```shell
-<AC1> display wlan vap all
-```
-
-```shell
-Checking AP Group
-<AC1> display ap-group name ap-group1
-```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

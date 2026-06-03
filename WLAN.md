@@ -1,5 +1,8 @@
 # WLAN
 
+![Topology](images/WLAN.png)  
+
+
 ## Switch A1 and A2
 
 Configure Device Hostname
